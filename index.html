@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
 <body>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-<h1>My First Heading</h1>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<p>My first paragraph.</p>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-<a href="https://jackteegarden.github.io">This is a link</a>
+<form action="https://cs47.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<a href="file:///C:/Users/TEEGJ495/Documents/Sites/jackteegarden.github.io/SalesforceCase.html">Link 2</a>
+<input type=hidden name="orgid" value="00D2a00000092Os">
+<input type=hidden name="retURL" value="http://">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="jteegarden@ouc.com">      -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>
 
 </body>
 </html>
